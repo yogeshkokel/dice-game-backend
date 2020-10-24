@@ -1,0 +1,30 @@
+.DS_Store
+# Dependencies
+node_modules
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# package-lock.json (use yarn.lock instead)
+package-lock.json
+
+#config folder
+/app/config
+
+#public folder
+public/uploads
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+#logs file
+combined.log
+error.log
