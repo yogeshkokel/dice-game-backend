@@ -49,7 +49,7 @@ module.exports.login = function (req, res) {
                 } else if (!result) {
                     logger.info('User Authentication Failed');
                     res.status(httpStatus.UNAUTHORIZED).json({ status: false, message: "User Authentication Failed", error: null })
-                } else {
+                } else if (req.body.nickname === users[0].nickname && users[0].type == 'learner') {
                     const token = jwt.sign({
                         username: users[0].username,
                         email: users[0].email,
@@ -57,6 +57,9 @@ module.exports.login = function (req, res) {
                         type: users[0].type
                     }, config.JWT_SECRET_KEY, { expiresIn: '7d' })
                     res.status(httpStatus.OK).json({ status: true, message: "Auth Successfully", error: null, token })
+                } else {
+                    logger.info('User Authentication Failed');
+                    res.status(httpStatus.OK).json({ status: false, message: "User Authentication Failed", error: null })
                 }
             });
         }
