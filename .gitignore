@@ -11,7 +11,7 @@ yarn-error.log*
 package-lock.json
 
 #config folder
-/app/config
+# /app/config
 
 #public folder
 public/uploads
