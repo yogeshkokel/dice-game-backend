@@ -2,7 +2,7 @@
   "name": "node-mongo-boilerplate",
   "version": "1.0.0",
   "description": "NodeJS Mongoose Boilerplate",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
@@ -20,6 +20,10 @@
     "mongoose": "^5.10.0",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "pm2": "^4.5.0",
     "winston": "^3.3.3"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
