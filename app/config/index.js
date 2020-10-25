@@ -1,4 +1,4 @@
-const PORT = 3000;
+const PORT = 8080;
 const MONGO_DB_URI = 'mongodb://admin:admin1234@ds111489.mlab.com:11489/indusgeek';
 const JWT_SECRET_KEY = 'thisisasamplesecret';
 
