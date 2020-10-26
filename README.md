@@ -15,8 +15,8 @@ A boilerplate for quickly building RESTful APIs using Node.js, Express, and Mong
 Clone the repo:
 
 ```bash
-git clone https://github.com/yogeshkokel/node-mongo-boilerplate.git
-cd node-mongo-boilerplate
+git clone https://github.com/yogeshkokel/dice-game-backend
+cd dice-game-backend
 ```
 
 Install the dependencies:

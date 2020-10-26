@@ -1,5 +1,5 @@
 {
-  "name": "node-mongo-boilerplate",
+  "name": "dice-game-backend",
   "version": "1.0.0",
   "description": "NodeJS Mongoose Boilerplate",
   "main": "server.js",
